@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel</title>
+
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        const AFFILIATE_URL = "https://aviasales.tpk.lv/XXbtWHo9?erid=2Vtzqx7g24r";
+
+        const tg = window.Telegram.WebApp;
+
+        tg.ready();
+        tg.expand();
+
+        // Небольшая задержка, чтобы Telegram корректно открыл WebApp
+        setTimeout(() => {
+            window.location.href = AFFILIATE_URL;
+        }, 300);
+    </script>
+</head>
+<body>
+    <p>Перенаправляем...</p>
+</body>
+</html>
